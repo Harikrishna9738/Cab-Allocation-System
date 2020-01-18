@@ -18,7 +18,7 @@ admin.site.register(Driver, DriverAdmin)
 
 
 class RideAdmin(admin.ModelAdmin):
-    list_display = ('user_details', 'driver_details', 'booking_start_time', 'booking_end_time')
+    list_display = ('ride_status','user_details', 'driver_details', 'booking_start_time', 'booking_end_time')
 
 
 admin.site.register(Ride, RideAdmin)

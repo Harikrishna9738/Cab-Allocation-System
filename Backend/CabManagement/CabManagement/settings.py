@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CabManagementApp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'CabManagement.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'CabManagementData',
+        'NAME': 'cabmanagementdata',
         'USER': 'admin',
         'PASSWORD': 'admin123',
         'HOST': 'localhost',

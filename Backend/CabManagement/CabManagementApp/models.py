@@ -29,11 +29,17 @@ class Driver(models.Model):
 class Ride(models.Model):
     """ride model,this has a tree structure using foriegn key.
         """
-    user_details = models.ForeignKey('User',  on_delete=models.CASCADE)
-    drivers_details = models.ForeignKey('Driver', on_delete=models.CASCADE)
+    ride_requested = '1'
+    ride_accepted = '10'
+    ride_done = '20'
+
+    ride_status_type = [
+        (ride_requested, 'ride_requested'),
+        (ride_accepted, 'ride_accepted'),
+        (ride_done, 'ride_done')
+    ]
+    user_details = models.ForeignKey(User, on_delete=models.CASCADE)
+    driver_details = models.ForeignKey(Driver, blank=True, null=True, on_delete=models.CASCADE)
     booking_start_time = models.DateTimeField(auto_now_add=True, help_text="ride start time")
     booking_end_time = models.DateTimeField(auto_now=True, help_text="ride end time")
-
-
-
-
+    ride_status = models.CharField(max_length=2, choices=ride_status_type, default=ride_done, help_text="The current ride status")
