@@ -2,7 +2,7 @@
 
 This application serves like a real time rides just like a customer can book a cab, available drivers can accept the rides and here only the customer can end the ride.
 
-Further Functionalities and Assumptions:
+# Further Functionalities and Assumptions:
 
     Each Customer can request only one cab at a time.
     Each driver can accept only one ride at a time.
