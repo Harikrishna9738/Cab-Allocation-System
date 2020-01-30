@@ -1,4 +1,4 @@
-###Cab Allocation System
+### Cab Allocation System
 
 This application serves like a real time rides just like a customer can book a cab, available drivers can accept the rides and here only the customer can end the ride.
 
@@ -9,7 +9,7 @@ Further Functionalities and Assumptions:
     Every ride has 3 status : REQUESTED, ACCEPTED and DONE.
     Customers and Drivers have unique names.
 
-##Prerequisites
+## Prerequisites
 
 You need to install the following packages for backend:
 ```
@@ -22,7 +22,7 @@ psycopg2==2.8.4
 pytz==2019.3
 sqlparse==0.3.0
 ```
-##Installing
+## Installing
 
 Clone the repository
 ```
